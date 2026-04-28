@@ -20,7 +20,7 @@ function App() {
   const buttonList = []
   for (const item of arr) {
     buttonList.push(
-      <button id={item} style={{ backgroundColor: item }} className="px-4 py-2" onClick={() => {return setColor(item) }} >
+      <button id={item} style={{ backgroundColor: item, color:'black' }} className="px-4 py-2" onClick={() => {return setColor(item) }} >
         {item}
       </button>
     );
