@@ -31,6 +31,11 @@ function App() {
   }, [num, len, char]
   );
 
+    useEffect(() => {
+    set_password()
+  }, [len, num, char])
+
+
   //copy to clipboard function
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();// This line is  only for showing the selected text in blue
